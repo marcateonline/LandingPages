@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/tauros.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div id="cont01-c">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Taurus-logos_white.png" alt="Taurus Gym" width="150px"></a>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu-item"><a href="../index.html" class="menu-item-link">Inicio</a></li>
+                    <li class="menu-item"><a href="" class="menu-item-link">Servicios</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="musculacion.html"class="submenu-item-link">Musculación</a> </li>
+                            <li class="submenu-item"><a href="funcional.html"class="submenu-item-link">Funcional</a> </li>
+                            <li class="submenu-item"><a href="cardio.html"class="submenu-item-link">Cardio</a> </li>
+                        </ul>
+                    </li>
+                    <li  class="menu-item"><a href="planes.html"class="menu-item-link">Planes</a></li>
+                    <li class="menu-item"><a href="sedes.html" class="menu-item-link">Sedes</a></li>
+                    <li  class="menu-item"><a href="contacto.html"class="menu-item-link" id="btn_contactanos">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contactanos-body">
+                <div id="port02-c">
+                    <h1 class="titulo02-c">Contáctanos</h1>
+                    <h2 class="titulo02-c2">Deja tus datos y nos contactaremos contigo:</h2>
+                </div>
+                <div id="cont02-c">
+                    <div id="Conte-img-1-c">
+                        <img src="../img/contactenos.jpg" alt="Contacto" class="princ-img-c">
+                    </div>
+                    <div id="Conte-principal-2-c">
+                        <div id="divi-1-c">
+                            <p class="parr1-c">
+                                Si necesitas información de nuestros programas, servicios o cualquier
+                                otra consulta, por favor sírvete escribirnos y en breve nos
+                                contactaremos contigo.
+                            </p>
+                        </div>
+                        <div id="div-2-c">
+                            <form class="formulario-c" action="contacto_enviado.html">
+                                <div class="form-item-group">
+                                    <label for="doc_select">Tipo de Documento</label>
+                                    <select name="doc_select" id="doc_select"> 
+                                        <option value="DNI">DNI</option>
+                                        <option value="CARNET">Carnet de Extrajeria</option>
+                                        <option value="PASAPORTE"> N° de Pasaporte</option>
+                                        <input type="text" placeholder="Coloca N° de Documento">
+                                    </select>
+                                </div>
+                                <div class="form-item-group">
+                                    <label for="nombre">Nombres:</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Coloca tu nombre" required>
+                                </div>
+                                <div class="form-item-group">
+                                    <label>Apellidos:</label>
+                                    <input type="text" placeholder="Coloca tus Apellidos" required>
+                                </div>
+                                <div class="form-item-group">
+                                    <label>Email:</label>
+                                    <input type="email" placeholder="Coloca tu Email" required>
+                                </div>
+                                <div class="form-item-group">
+                                    <label>Telefono:</label>
+                                <input type="tel" placeholder="Coloca tu Teléfono" required>
+                                </div>
+                                <div class="form-item-group">
+                                    <label>Sexo:</label>
+                                    <input type="radio" name="sexo"> Masculino 
+                                    <input type="radio" name="sexo"> Femenino 
+                                    <input type="radio" name="sexo"> Indeterminado
+                                </div>
+                                <div class="form-item-group">
+                                    <label for="Mensaje">Escriba su mensaje:</label>
+                                    <textarea name="Mensaje" placeholder="Escriba aquí su mensaje" id="" cols="60" rows="10"></textarea>
+                                </div>
+                                <div class="form-button-summit">
+                                    <input class="enviar-c" type="submit">
+                                </div>
+                                
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="separador-section"></div>
+        </main>
+        <footer class="footer">
+            <div class="navegacion-footer-principal">
+              <div class="list-services-footer">
+                <h3>Servicios</h3>
+                <ul>
+                  <li><a href="musculacion.html">Musculación</a></li>
+                  <li><a href="funcional.html">Funcional</a></li>
+                  <li><a href="cardio.html">Cardio</a></li>
+                </ul>
+              </div>
+              <div class="list-navegacion-footer">
+                <h3>Mapa del Sitio</h3>
+                <ul>
+                    <li><a href="#contactanos">Contáctanos</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#sedes">Sedes</a></li>
+                </ul>  
+              </div>
+              <div class="list-legal-footer">
+                <h3>Taurus Gym</h3>
+                <ul>
+                  <li><a href="#politicasprivacidad">Políticas de Privacidad</a></li>
+                  <li><a href="#terminoscondiciones">Términos y Condiciones de Servicio</a></li>
+                </ul>  
+              </div>
+              <div class="list-social-footer">
+                <a href=""><img src="../img/logo_facebook.png" alt="taurus_gym_facebook"></a>
+                <a href=""><img src="../img/logo_whatsapp.png" alt="taurus_gym_whatsapp"></a>
+                <a href=""><img src="../img/logo_instagram.png" alt="taurus_gym_instagram"></a>
+                <a href=""><img src="../img/logo_twitter.png" alt="taurus_gym_twitter"></a>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Todos los derechos reservados - 2022</p>
+            </div>
+          </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,765 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000000;
+  top: 0;
+}
+
+.logo {
+  width: 20%;
+  letter-spacing: 3px;
+  color: #ffc107ff;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav {
+  width: 80%;
+  height: auto;
+  z-index: 1;
+}
+
+.menu {
+  width: auto;
+  color: white;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-item-link {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item-link:hover {
+  color: #ffc107ff;
+  text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu-item:hover {
+  background-color: #ffc107ff;
+}
+
+.submenu-item-link {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.submenu-item-link:hover {
+  color: black;
+}
+
+#btn_contactanos {
+  color: black;
+  font-size: 1em;
+  background-color: #ffc107ff;
+  text-align: center;
+  margin: 0 0.5em 0;
+}
+
+.banner {
+  text-align: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 600px;
+  z-index: -1;
+}
+
+.video {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(50%);
+}
+
+.inner-video {
+  width: 600px;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.inner-video p:first-child {
+  text-align: center;
+  width: 700px;
+  font-size: 50px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.inner-video p {
+  margin: 0.5em;
+}
+
+.inner-video p b {
+  color: #ffc107ff;
+}
+
+.inner-video-button {
+  width: 200px;
+  font-size: 15px;
+  color: black;
+  font-size: 1em;
+  background-color: #ffc107ff;
+  border: 2px solid #ffc107ff;
+  text-align: center;
+  margin: 1em 0.5em 0;
+  padding: 1em;
+  text-decoration: none;
+  transition: background-color 1s ease;
+  cursor: pointer;
+}
+
+.inner-video-button:hover {
+  border: 2px solid #ffc107ff;
+  background: black;
+  color: #ffc107ff;
+}
+
+/* Inicio > Sección Servicios */
+
+.servicios {
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+}
+
+.servicios-title {
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  color: #ffc107ff;
+}
+
+.servicios-subtitle {
+  width: 60em;
+  text-align: center;
+  margin: auto;
+  padding: 5px 5px 20px;
+  color: #ffc107ff;
+}
+
+.servicios-body {
+  top: 5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_thumbail {
+  text-align: center;
+  padding: 1em;
+}
+
+.service-thum-img {
+  width: 20em;
+  height: 20em;
+  border: 5px solid #ffc107ff;
+  border-radius: 50%;
+  margin: 1.5em;
+  object-fit: cover;
+}
+
+.service-thum-title {
+  color: #ffc107ff;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 1em;
+}
+
+.service_thumbail a {
+  text-decoration: none;
+}
+
+/* Inicio > Formulario Contacto. */
+
+.banner-contact {
+  width: 100%;
+  height: auto;
+  background-color: #ffc107ff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0 1.5em 0;
+}
+
+.banner-contact-text {
+  padding: 1em;
+  text-align: left;
+}
+
+.banner-contact-title {
+  width: 100%;
+  font-size: 2.5em;
+  margin: 0 0.5em 0 0;
+}
+
+.banner-contact-form {
+  width: 30%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 3em;
+}
+
+#contact-form-input {
+  width: 100%;
+  margin: 1em 0;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 0;
+}
+
+#contact-form-input:focus {
+  border: solid black 2px;
+}
+
+.contact-form-button {
+  background-color: #0a0a23;
+  color: #ffc107ff;
+  border: none;
+  padding: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+
+#text-reservado {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid rgba(255, 193, 7, 1);
+  padding: 2em 0 2em 0;
+}
+
+/*Inicio > Sección Sede: */
+
+.sedes {
+  margin: 0 auto;
+  padding: 2.5em;
+  background-color: #000000;
+}
+
+.sedes-title {
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
+  padding: 0.5em;
+  color: #ffc107ff;
+}
+.list-sedes {
+  display: flex;
+  justify-content: center;
+}
+
+.list-sedes img {
+  height: auto;
+  border: solid 10px #ffc107ff;
+  max-width: 350px;
+}
+.list-sedes a {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* Sección de Clientes */
+
+.clientes {
+  padding: 2em 0;
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: center;
+}
+.client-card {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.client-card-img {
+  width: 200px;
+  height: auto;
+  margin: 0 0.5em;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+.client-card-star {
+  width: auto;
+  height: 25px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+
+.navegacion-footer-principal {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.navegacion-footer-principal ul {
+  list-style: none;
+}
+.navegacion-footer-principal ul a {
+  margin: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.list-services-footer {
+  width: 20%;
+  height: auto;
+  margin: 0.5em;
+}
+
+.list-services-footer li {
+  margin: 0.1em;
+}
+
+.list-navegacion-footer {
+  width: 20%;
+  height: auto;
+  margin: 0.5em;
+}
+
+.list-navegacion-footer li {
+  margin: 0.1em;
+}
+
+.list-legal-footer {
+  width: 40%;
+  height: auto;
+  margin: 0.5em;
+}
+
+.list-legal-footer li {
+  margin: 0.1em;
+}
+
+.list-social-footer {
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  padding: 1em 1em;
+}
+
+.list-social-footer a {
+  transition: transform 0.5s ease;
+}
+
+.list-social-footer a:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  width: 100%;
+  background-color: #ffc107ff;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/*Pagina: SERVICIOS: Cardio, Funcional, Musculación */
+/*--------------------------------------------------------------------------*/
+
+.contenido-servicio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  background-color: #000000;
+}
+
+.contenido-servicio-texto {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.contenido-servicio-texto h1 {
+  font-size: 3em;
+  text-align: left;
+  padding: 5px 0;
+  color: #ffc107ff;
+}
+
+.contenido-servicio-texto h2 {
+  font-size: 2em;
+  text-align: left;
+  padding: 5px 15px 20px;
+  color: white;
+}
+
+.contenido-servicio-texto p {
+  color: white;
+  text-align: justify;
+  padding: 5px 15px;
+}
+
+.contenido-servicio-sedes li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.contenido-servicio img {
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  padding: 1em;
+  border-radius: 2em;
+}
+/*--------------------------------------------------------------------------*/
+
+/*Pagina: SEDES */
+/*--------------------------------------------------------------------------*/
+
+.contenido-sedes {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  padding: 5em 0 5em 0;
+  background-color: #000000;
+}
+
+.contenido-sedes-title {
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  color: #ffc107ff;
+}
+
+.contenido-sedes-list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-sedes-card {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  padding: 30px;
+  margin: 0;
+  min-width: 280px;
+}
+
+.contenido-sedes-card img {
+  height: 250px;
+  border: solid 5px #ffc107ff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenido-sedes-card-top {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 200px;
+}
+
+.contenido-sedes-card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 20px 40px 20px 20px;
+}
+
+.contenido-sedes-card-title a {
+  color: #ffc107ff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  text-shadow: #000 1px 1px 1px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -15px 58px #000;
+}
+
+.sedes-planes-list {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sedes-planes-list-item {
+  padding: 0 10px;
+  border-right: 1px solid #ccc;
+}
+.sedes-planes-list-item:hover {
+  color: #ffc107ff;
+}
+
+.sedes-planes-list-item-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.sedes-planes-list-item-link:hover {
+  color: #ffc107ff;
+}
+
+.sedes-planes-list-item .sp-list-item-precio {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+}
+
+.sedes-planes-list-item .sp-list-item-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px 10px;
+}
+.sedes-planes-list-item .sp-list-item-precio-entero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 20px Roboto, helvetica, arial, sans-serif;
+  text-align: center;
+}
+.sedes-planes-list-item .sp-list-item-decimal {
+  font-size: 0.5em;
+  margin-top: 0.2em;
+  margin-left: -0.2em;
+}
+
+.contenido-sedes-card-top .sede-texto-promocion {
+  background-color: #ffc107ff;
+  width: 100%;
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #1f2123;
+  font-size: 10px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-sedes-card-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.sedes-boton-inscribite {
+  width: 100%;
+  vertical-align: middle;
+  padding: 15px 0 15px 0;
+  background-color: #dc0a17;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.sedes-boton-inscribite:hover {
+  background-color: #ab0812;
+}
+
+.sedes-card-body-text {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px 0 10px 0;
+}
+/*--------------------------------------------------------------------------*/
+
+/*Pagina: RESERVAR */
+/*--------------------------------------------------------------------------*/
+
+.reservar {
+  display: block;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.formulario-reservar {
+  width: 100%;
+  height: auto;
+  padding: 6px 0 20px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  background-color: black;
+}
+
+.reservar-top {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.reservar-title {
+  font-size: 4em;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  color: #ffc107ff;
+}
+
+.reservar-top p {
+  color: white;
+}
+
+#form-input-dni {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ffc107ff;
+  border-radius: 10px;
+}
+
+#form-list-sedes {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ffc107ff;
+  border-radius: 10px;
+  color: #555;
+}
+
+#form-list-sedes option {
+  padding: 5px 0 5px 0;
+}
+
+#form-list-horario {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #ffc107ff;
+  border-radius: 10px;
+  color: #555;
+}
+
+#form-boton-reservar {
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 0.5em 0;
+  color: black;
+  background-color: #ffc107ff;
+  cursor: pointer;
+}
+
+.grid-container-form-reservar {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item-form-link {
+  background-color: white;
+  text-decoration: none;
+  border: solid 4px #ffc107ff;
+  border-radius: 4px;
+  padding: 2em;
+  margin: 1em;
+  transition: background-color 0.5s ease;
+}
+
+.grid-item-form-link:hover {
+  background-color: #dc0a17;
+  color: white;
+}
+
+.grid-item-clase {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.grid-item-instructor {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.grid-item-horario {
+  font-size: 14px;
+  margin: 5px;
+}
